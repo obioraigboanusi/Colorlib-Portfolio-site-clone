@@ -24,6 +24,9 @@ nav ul{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	}
+	label{
+		color: #f2f2f2;
+	}
 @media screen and (min-width: 562px){
 	nav{
 		flex-direction: row;
@@ -124,6 +127,9 @@ header,footer{
 		box-sizing: border-box;
 		justify-content: space-between;
 		flex-direction: row;
+	}
+	label{
+		color: #311e25;
 	}
 }
 @media screen and (min-width: 494px){
