@@ -6,22 +6,39 @@
 	<title>Obiora Igboanusi's website| Creative Web developer</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
 </head>
 <body>
 	<header>
 		<nav>
 			<div class="nav-item">
-				<a href="index.html"><h2>OBIORA.</h2></a>
-			</div>
-			<ul class="nav-item">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="works.html">Works</a></li>
-				<li><a href="services.html">Services</a></li>
-				<!-- <li><a href="about.html">About</a></li> -->
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+				<a href="index.html"><h1>OBIORA.</h1></a>
+				<div id="hambgr" class="mobileonly">
+					<a href="#main-menu"
+					id="main-menu-toggle"
+					class="menu-toggle">
+					<span class="fa fa-bars" style="color: aliceblue;"></span>
+					</a>
+        </div>
+        <div id="main-menu" class="main-menu">
+          <a href="#main-menu-toggle"
+             id="main-menu-close"
+             class="menu-close">         
+            <span class="fa fa-close">Close</span>
+            <span id="desktoponly" class="fa fa-close"></span>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="services.html">Services</a></li>
+            <!-- <li><a href="about.html">About</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <a href="#main-menu-toggle"
+         class="backdrop"
+         tabindex="-1">
 		<div id="headerinvite" class="container">
 			<div id="intro">
 				<h1>Hi there,<br> I am Obiora</h1>
@@ -74,7 +91,7 @@
 			<div id="myworksmain">
 				<div class="myworkstable">
 					<div>
-						<img src="images/1.png" class="img-responsive">
+						<img src="/images/1.png" class="img-responsive">
 						<h4>Mobile App</h4><p>Colorlib App Project</p>
 					</div>
 					<div>
@@ -84,7 +101,7 @@
 				</div>
 				<div class="myworkstable">
 					<div>
-						<img src="images/3.png" class="img-responsive">
+						<img src="/images/3.png" class="img-responsive">
 						<h4>Mobile App</h4><p>Colorlib App Project</p>
 					</div>
 					<div>
@@ -119,8 +136,8 @@
 			<a href="#" class="fillwidth button">WhatsApp<i class="fa fa-whatsapp"></i></a>
 			<a href="https://www.linkedin.com/in/obiora-igboanusi-586569140" class="fillwidth button">Linkedin<i class="fa fa-linkedin"></i></a>
 		</div>
-		<div style="margin-top: 50px;" class="container">
-			Copyright ©2019 All rights reserved | This template is made with by Colorlib
+		<div class="container copyright">
+			All rights reserved © At Chukwunweike Obiora Igboanusi
 		</div>
 	</footer>
 

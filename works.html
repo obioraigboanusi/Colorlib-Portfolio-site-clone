@@ -9,32 +9,43 @@
 </head>
 <body>
 <header>
-		<nav>
-			<div class="nav-item ">
-				<a href="index.html"><h2>OBIORA.</h2></a>
+	<nav>
+		<div class="nav-item">
+			<a href="index.html"><h1>OBIORA.</h1></a>
+			<div id="hambgr" class="mobileonly">
+				<a href="#main-menu"
+				id="main-menu-toggle"
+				class="menu-toggle">
+				<span class="fa fa-bars" style="color: aliceblue;"></span>
+				</a>
 			</div>
-			<ul class="nav-item">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="works.html">Works</a></li>
-				<li><a href="services.html">Services</a></li>
-				<!-- <li><a href="about.html">About</a></li> -->
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			<!-- <select class="nav-item">
-				<div><a href="index.html">Home</a></div>
-				<div><a href="works.html">Works</a></div>
-				<div><a href="services.html">Services</a></div>
-				<div><a href="about.html">About</a></div>
-				<div><a href="contact.html">Contact</a></div>
-			</select> -->
-		</nav>
+			<div id="main-menu" class="main-menu">
+				<a href="#main-menu-toggle"
+					 id="main-menu-close"
+					 class="menu-close">         
+					<span class="fa fa-close">Close</span>
+					<span id="desktoponly" class="fa fa-close"></span>
+				</a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="works.html">Works</a></li>
+					<li><a href="services.html">Services</a></li>
+					<!-- <li><a href="about.html">About</a></li> -->
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<a href="#main-menu-toggle"
+			 class="backdrop"
+			 tabindex="-1">
+	</a>
 		<div id="headerinvite">
-			<h1>My Works</h1>
+			<h2>My Works</h2>
 		</div>
 	</header>
 	<section>
 		<div id="myworks" class="container">
-			<h2 style="color: white">My Works</h2>
 			<div id="myworksmain">
 				<div class="myworkstable">
 					<div>
@@ -72,8 +83,8 @@
 			<a href="#" class="fillwidth button">WhatsApp<i class="fa fa-whatsapp"></i></a>
 			<a href="#" class="fillwidth button">Linkedin<i class="fa fa-linkedin"></i></a>
 		</div>
-		<div style="margin-top: 50px;">
-			Copyright ©2019 All rights reserved | This template is made with by Colorlib
+		<div class="container copyright">
+			All rights reserved © At Chukwunweike Obiora Igboanusi
 		</div>
 	</footer>
 </body>

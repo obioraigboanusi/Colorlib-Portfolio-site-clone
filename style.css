@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	padding: 0;
 	background-color: #311e25;
 	font-size: 20px;
 	text-align: left;
@@ -15,45 +16,326 @@ body{
 	width: 100%;
 	height: auto;
 }
-nav{
+	label{
+		color: #cfc8c8;
+	}
+
+	a{
+		text-decoration: none;
+		color: gold;
+		display: block;
+	}
+	ul{
+		list-style-type: none;
+		overflow: hidden;
+	}
+	li{
+		display: inline-block;
+		margin: 0;
+		padding: 10px;
+		text-decoration: none;
+		text-align: center;
+	}
+	p, h4, h5, h6, h1{
+		color: white;
+	}
+	strong, h2, h3, span{
+		color: rgb(221, 138, 61);
+	}
+	footer button {
+		color: white;
+		background-color: transparent;
+		font-size: 20px;
+		border: 1px solid #7a5444;
+		box-sizing: border-box;
+	}
+	h2, h2{
+		font-size: 30px;
+	}
+	button, .button {
+		border: 0.1px solid rgb(221, 197, 61);
+		padding: 20px;
+		background-color: transparent;
+		color: rgb(221, 197, 61);
+		font-size: 20px;
+		box-sizing: border-box;
+	}
+	.container{
+		width: 100%;
+		height: auto;
 		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+	.container-item{
+		width: 100%;
+		height: auto;
+		display: flex;
+	}
+	.tableclass{
+		border: 1px solid rgb(153, 147, 147);
+		display: flex;
+		flex-direction:column; 
+		justify-content: space-around;
+		padding: 10px;
+		flex-basis: 10%;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+	}
+	.img-responsive{
+		height: auto;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	#myworks{
 		flex-direction: column;
 	}
-nav ul{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	#buttonfolder a{
+	margin-bottom: 1rem;
 	}
-	label{
-		color: #f2f2f2;
+	#buttonfolder{
+		width: 100%;
 	}
-@media screen and (min-width: 562px){
-	nav{
+	.fillwidth{
+		display: flex;
+		flex: 1;
+		box-sizing: border-box;
+		justify-content: space-between;
+		flex-direction: row;
+		margin: 1em;
+	}
+	#letstalk{
+		border: 0.5px solid white;
+		padding: 20px;
+	}
+	input[type=text], select, textarea{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid gray;
+			border-radius: 4px;
+			box-sizing: border-box;
+			background-color: white;
+			color: black;
+	}
+	input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+	}
+	
+	input[type=submit]:hover {
+			background-color: #45a049;
+	}
+	textarea{
+		height: 150px;
+		font-size: 16px;
+			resize: none;
+	}
+	.form {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+	}
+	nav,section, #myworks, #myservices,footer, header, .adj {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	#followme{
+		text-align: center;
+	}
+	
+	.nav-item{
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	#mobileonly, .mobileonly{
+		display: inline-block;
+		color: #504139 ;
+	}
+	.desktoponly, #desktoponly, #navkontakt{
+		display: none;
+	}
+	header,footer{
+		background-image: url('/images/banner.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;  
+		background-size: cover;
+		}
+@media screen and (min-width: 562px){
+	/* nav{
+		flex-direction: row;
+		justify-content: space-between;
+	} */
 }
-@media screen and (max-width: 820px){
+@media screen and (max-width: 800px){
 #myphoto img{
 	width: 100%;
 	height: auto;
 	display: none;
 	}
 }
-header,footer{
-		background-image: url('banner.png');
-		background-repeat: no-repeat;
-		background-attachment: fixed;  
-		background-size: cover;
-		}
-@media screen and (min-width: 475px){
-	/*nav {
+	/* Button styling */
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #333;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+}
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+  position: absolute;
+  display: none;
+  right: 0px;
+  top: 0px;
+	height: auto;
+	z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  min-height: auto;
+  width: 200px;
+  background: #504139;
+}
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  /* border-bottom: 1px solid #383838; */
+}
+.main-menu a:hover,
+.main-menu a:focus {
+  background: gray;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  /* right: 0px; */
+  /* top: 0px; */
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+*/
+.main-menu:target{
+  display: block;
+  /* left: 0; */
+}
+
+.main-menu:target .menu-close{
+  z-index: 1001;
+}
+
+.main-menu:target ul{
+  position: relative;
+  z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop{
+  /* position: absolute; */
+  display: block;  
+  /* left: 0; */
+  /* top: 0; */
+  width: auto;
+  height: auto;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop{
+    position: fixed;
+  }
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+@media screen and (min-width: 800px) {
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+  
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+		right: 0px;
+    top: 0px;
+		/* height: auto; */
+    display: inline-block;
+  }
+  
+  .main-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    background-color: inherit;
+    /* Undo off-canvas styling */
+    padding: 0;
+    height: auto;
+    display: flex;
 		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		color: gold;
-		text-align: center;
-	}*/
+  }  
+  
+  .main-menu a {
+    color: #fffef8;
+    text-align: center;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: #c00;
+  }
+  
+}
+@media screen and (min-width: 475px){
 	#headerinvite{
 		display: flex;
 		flex-direction: row;
@@ -103,7 +385,6 @@ header,footer{
 		flex-wrap: wrap;
 	}
 	.tableclass{
-		border: 1px solid black;
 		display: flex;
 		justify-content: space-around;
 		flex:1;
@@ -128,9 +409,6 @@ header,footer{
 		justify-content: space-between;
 		flex-direction: row;
 	}
-	label{
-		color: #311e25;
-	}
 }
 @media screen and (min-width: 494px){
 	#tbl1, #tbl2{
@@ -138,21 +416,8 @@ header,footer{
 	}
 	#tbl3{
 		flex-basis: 90%;
-		/*order: 3;*/
 	}
 }
-/*@media screen and (min-width: 550px){
-	#myphoto{
-	background-image: url('photo.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;  
-	background-size:cover;
-	}
-	#intro, #myphoto{
-		flex: 1;
-		height: 500px;
-	}
-}*/
 @media screen and (min-width: 700px){
 	#table{
 		flex-direction: row;
@@ -175,139 +440,8 @@ header,footer{
 	}
 }
 
-nav{
-	display: flex;
-}
-a{
-	text-decoration: none;
-	color: gold;
-	display: block;
-}
-ul{
-	list-style-type: none;
-	overflow: hidden;
-}
-li{
-	display: inline-block;
-	margin: 0;
-	padding: 10px;
-	text-decoration: none;
-	text-align: center;
-}
-p, h4, h5, h6, h1{
-	color: white;
-}
-strong, h2, h3, span{
-	color: gold;
-}
-footer button {
-	color: white;
-	background-color: transparent;
-	font-size: 20px;
-	border: 1px solid #7a5444;
-	box-sizing: border-box;
-}
-h2, h2{
-	font-size: 30px;
-}
-button, .button {
-	border: 0.1px solid gold;
-	padding: 20px;
-	background-color: transparent;
-	color: gold;
-	font-size: 20px;
-	box-sizing: border-box;
-}
-.container{
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	box-sizing: border-box;
-	padding-right: 1em;
-	padding-left: 1em;
-}
-.container-item{
-	width: 100%;
-	height: auto;
-	display: flex;
-}
-.tableclass{
-	border: 1px solid gray;
-	display: flex;
-	flex-direction:column; 
-	justify-content: space-around;
-	padding: 10px;
-	flex-basis: 10%;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-}
-.img-responsive{
-	height: auto;
-	width: 100%;
-	box-sizing: border-box;
-}
-#myworks{
-	flex-direction: column;
-}
-#buttonfolder a{
-margin-bottom: 1rem;
-}
-#buttonfolder{
-	width: 100%;
-}
-.fillwidth{
-	display: flex;
-	flex: 1;
-	box-sizing: border-box;
-	justify-content: space-between;
-	flex-direction: row;
-	margin: 1em;
-}
-#letstalk{
-	border: 0.5px solid white;
-	padding: 20px;
-}
-
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-textarea{
-	height: 150px;
-	font-size: 16px;
-    resize: none;
-}
-.form {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-}
-nav,section, #myworks, #myservices,footer, header, .adj {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-#followme{
-	text-align: center;
+.copyright{
+	text-transform: capitalize;
+	color: rgb(141, 138, 138);
+	margin: 5px;
 }
